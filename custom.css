@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Lobster&display=swap');
+
+*{
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.top{
+    background:  rgba(255, 89, 89, 0.7) url(img/gym_02.png) no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;  
+    height: 10%;   
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    padding: 2px 23px;
+    margin-left: 66px;
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#name_01{
+    color: rgb(255, 255, 255);
+}
+#name_02{
+    color: red;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list li{
+    padding: 2px 20px;
+    font-size: 16px;
+}
+
+.nav-list a{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list a:hover{
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-bg{
+    padding: 7px 10px;
+    margin: 3px 5px;
+    background: none;
+    border: 0.3px solid rgb(175, 158, 158);
+    color: rgb(255, 251, 251);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-bg:hover{
+    background-color: rgb(255, 24, 24);
+    cursor: pointer;
+}
+
+.sec_01{
+    position: relative;
+    height: 100vh;     
+}
+
+.sec_01 #top{
+    color: white;
+    position: absolute;
+    top: 38%;                       
+    left: 35%;                       
+    font-size: 230%;
+    font-family: 'Bree Serif', serif;
+}
+
+.sec_01 #end{
+    color: white;
+    position: absolute;
+    top: 45%;             
+    left: 24%; 
+    font-size: 612%;
+    font-family: 'Anton', sans-serif
+}
+
+.btn-sm{
+    position: absolute;
+    padding: 10px 10px;
+    border: 0.3px solid rgb(175, 158, 158);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    top: 75%;
+    left: 44.5%;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.btn-sm:hover{
+    transition: 0.3s;
+    background-color: red;
+    color:white;
+}
+
+.burger{
+    display: none;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+/* *************************section-02 ********************************/
+.sec_02{
+    height: 100vh;
+    position: relative;
+    background-color: rgb(236, 255, 236);
+}
+
+.header h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.header img{
+    position: absolute;
+    top: 23%;
+    left: 49%;
+    border-radius: 32%;
+}
+
+.header p{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 100, 100);
+    top: 33%;
+    left: 19%;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 42%;
+}
+
+.part-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 129px;
+}
+
+.part-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 85px;
+}
+
+.prof{
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 5px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.19);
+}
+
+.content_01, .content_02, .content_03{
+    margin: 10px 0px;
+}
+
+
+.link a{
+    text-decoration: none;
+    color: red;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 13px;
+}
+
+.link a:hover{
+    color: rgb(11, 185, 253);
+}
+
+.font{
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.float_left p{
+    font-size: 16px;
+    line-height: 23px;
+    color: rgb(105, 100, 100);
+}
+
+/*************************section_03*****************************************/
+
+.sec_03{
+    position: relative;
+    height: 40vh;
+    background: rgba(161, 45, 45, 0.7) 
+    url(img/tom-morel-ktVazL5c7FM-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+#top_02{
+    position: absolute;
+    color: white;
+    top: 18%;
+    left: 23%;
+    font-size: 455%;
+}
+
+#end_02{
+    position: absolute;
+    color: white;
+    top: 57%;
+    left: 23.5%;
+    font-size: 100%;
+}
+
+.sec_foot{
+    position: absolute;
+    top: 75%;
+    left: 47%;
+    background: red;
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: top 0.3s;
+}
+
+.sec_foot:hover{
+    top: 73%;
+}
+
+/**************************sec_04***************************************** */
+
+.sec_04{
+    height: 100vh;
+    position: relative;
+    background-color: rgba(255, 241, 236, 0.7);
+}
+
+.header-new h1{
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif;
+    top: 14%;
+    left: 46%;
+    letter-spacing: 0.2em;
+}
+
+.header-new img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.header-new p{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 100, 100);
+    top: 29%;
+    left: 19%;
+
+}
+
+.part_01 img{
+    float: left;
+}
+
+.main_content{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 32%;
+    left: 3%;
+}
+
+.part_01, .part_02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.content_A img{
+    margin: 30px 0px;
+    width: 500px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.content_a, .content_b, .content_c, .content_d{
+    width: 35%;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2),
+    0px 2px 3px rgba(0, 0, 0, 0.19);
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.content_a:hover, .content_b:hover, .content_c:hover, .content_d:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2),
+    0px 6px 20px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.content_A, .content_B{
+    margin-right: 163px;
+}
+
+.content_B h2{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.content_B p{
+    font-size: 16px;
+    line-height: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 100, 100);
+    margin-top: 5px;
+}
+
+.content_a p, .content_b p, .content_c p, .content_d p{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.part_01 img{
+    margin-right: 5px;
+}
+
+/***********************sec_05***********************************************/
+
+.sec_05{
+    height: 100vh;
+    position: relative;
+}
+
+.header-last h1{
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif;
+    top: 13%;
+    left: 43%;
+    letter-spacing: 0.2em;
+}
+
+.header-last img{
+    position: absolute;
+    top: 19%;
+    left: 48.5%;
+}
+
+.header-last p{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 100, 100);
+    top: 28%;
+    left: 19%;
+
+}
+
+.new_content{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 37%;
+    left: 17%;
+    right: 15%;
+}
+
+.content_x, .content_y, .content_z{
+    padding: 20px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2),
+     0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+#trainer{
+    margin-left: 6px;
+    border-radius: 10px;
+}
+
+#desc{
+    padding: 7px 2px;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 100, 100);
+}
+
+.new_content h2{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.new_content p{
+    color: red;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+
+/*******************************sec_06************************************/
+
+.sec_06{
+    position: relative;
+    height: 80vh;
+    background-color: rgb(226, 212, 255)
+}
+
+.last{
+    display: flex;
+    flex-direction: row;
+}
+
+.frame, .form{
+    width: 40%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    padding: 8px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2),
+    0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 3%;
+    left: 8%;
+}
+
+.frame p{
+    margin: 10px 10px;
+    font-size: 24px;
+    color: red;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+.form p{
+    margin: 5px 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,label{
+    margin: 10px 8px;
+    font-size: 16px;
+}
+
+fieldset{
+    width: 80%;
+    padding: 3px;
+}
+
+.submit{
+    margin-left: 45%;
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 5px 7px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(0, 195, 255);
+}
+
+/*********************** footer ******************************** */
+
+.footer{
+    height: 10vh;
+    background: rgba(161, 45, 45, 0.7) 
+    url(img/tom-morel-ktVazL5c7FM-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+.address{
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 23px 13px;
+    float: left;
+}
+
+.copyright{
+    float: right;
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 13px;
+
+}
